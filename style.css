@@ -48,14 +48,20 @@ input[type="text"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     margin: auto;
     margin-top: 20px;
     width: 100%;
-    max-width: 270px;
+    max-width: 350px;
 
   }
 .task-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 768px){
+      #tasks{
+        max-width: 300px;
+      }
   }
