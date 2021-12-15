@@ -13,6 +13,9 @@ function showTasks(){
                 
         const taskElements = document.createElement('div')
         taskElements.setAttribute('class', 'task-item')
+        
+        const checkbox = document.createElement('input')
+        checkbox.setAttribute('type', 'checkbox')
 
         const itemList = document.createElement('p')
         const itemText = document.createTextNode(item)
@@ -26,6 +29,7 @@ function showTasks(){
         btn.setAttribute('onclick', `removeTask(${pos})`)
 
         itemList.appendChild(itemText)
+        taskElements.appendChild(checkbox)
         taskElements.appendChild(itemList)
         taskElements.appendChild(btn)
 

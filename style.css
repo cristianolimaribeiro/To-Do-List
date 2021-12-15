@@ -59,9 +59,16 @@ input[type="text"] {
     align-items: center;
     justify-content: space-between;
   }
+input[type="checkbox"]{
+    margin-right: 5px;
+} 
+:checked + p {
+  text-decoration: line-through;
+  color: grey;
+}
 
-  @media (max-width: 768px){
+@media (max-width: 768px){
       #tasks{
         max-width: 300px;
       }
-  }
+}
