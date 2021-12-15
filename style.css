@@ -16,7 +16,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   margin: auto;
 }
@@ -47,7 +47,13 @@ input[type="text"] {
 #tasks {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
     margin-top: 20px;
+    width: 100%;
+    max-width: 270px;
+
   }
 .task-item {
     display: flex;
